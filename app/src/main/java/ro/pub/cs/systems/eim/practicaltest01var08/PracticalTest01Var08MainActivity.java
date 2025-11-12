@@ -41,7 +41,7 @@ public class PracticalTest01Var08MainActivity extends AppCompatActivity {
         answer = findViewById(R.id.editText2);
 
         broadcastReciever = new MyReceiver();
-        intentFilter = new IntentFilter();
+        intentFilter = new IntentFilter("Broadcast");
 
         if (savedInstanceState != null) {
             if (savedInstanceState.containsKey(ANSWER_KEY)) {

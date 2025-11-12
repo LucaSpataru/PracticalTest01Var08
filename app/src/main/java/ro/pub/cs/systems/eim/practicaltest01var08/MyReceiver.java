@@ -12,7 +12,7 @@ public class MyReceiver extends BroadcastReceiver {
     }
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.d("Broadcast", "Un mesaj de difuzare a fost primit!");
+        Log.d("BROADCAST", "Un mesaj de difuzare a fost primit!");
         String date = intent.getStringExtra("String");
         Toast.makeText(context, date, Toast.LENGTH_SHORT).show();
     }

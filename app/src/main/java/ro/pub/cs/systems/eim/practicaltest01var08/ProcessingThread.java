@@ -49,7 +49,7 @@ public class ProcessingThread extends Thread{
                 s += "*";
             }
         }
-        Intent intent = new Intent();
+        Intent intent = new Intent("Broadcast");
         intent.putExtra("String", s);
         context.sendBroadcast(intent);
 
